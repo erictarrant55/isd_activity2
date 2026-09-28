@@ -1,7 +1,23 @@
-from enum import Enum
+from shape.shape import Shape
+from shape.shape import abstractmethod
 
-class Rectangle(Enum):
-    SIDE_1 = float
-    SIDE_2 = float
-    SIDE_3 = float
+class Rectangle():
+    """Represents a rectangle"""
     
+    def __init__(
+        self,
+        color: str,
+        length: float,
+        width: float):
+
+        if length >= 0:
+            raise ValueError("length must be a value greater than zero.")
+
+        if width >= 0:
+            raise ValueError("width must be a value greater than zero.")
+
+    # @property
+    # def area(self) -> float
+
+    # @abstractmethod
+    # def get_perimeter(self) -> float

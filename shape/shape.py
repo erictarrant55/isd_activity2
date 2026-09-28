@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
-
+    """Represents a type of shape."""
     def __init__(
             self,
             color: str,
