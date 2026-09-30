@@ -1,3 +1,7 @@
+__author__ = "Eric Tarrant"
+__version__ = "1.0.0"
+
+
 from shape.shape import Shape
 from shape.shape import abstractmethod
 
